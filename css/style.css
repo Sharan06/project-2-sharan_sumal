@@ -1,0 +1,248 @@
+html, body {
+	background-image: url("../pictures/marble.png");
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	max-width: 1200px;
+}
+
+p, h2, h3, li, a {
+	font-family: "Raleway", Georgia, serif; 
+}
+
+header {
+	height: 15vh;
+}
+
+/* Logo */
+
+.logo {
+	font-family: "Anonymous Pro", "Lucida Console", Monaco, monospace, sans-serif;
+	font-weight: normal;
+	font-size: 3.125rem; /*50px*/
+	text-shadow: 4px 4px 4px #aaa;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+/* Nav Bar */
+
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	list-style-type: none;
+	padding: 10px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.125rem;
+	transition: all 0.3s ease 0.3s;
+}
+
+nav a:hover {
+	color: #009900;
+}
+
+/* Banner */
+
+.feature {
+	background: url("../pictures/wood-banner.jpg") no-repeat center;
+	background-size: contain;
+	width: 100%;
+	height:45vh;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.feature p {
+	color: white;
+	font-size: 3.75em; /*60px*/
+	align-self: center;
+}
+
+/* Supporting */
+
+.container {
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0px 20px;
+	width: 100%;
+}
+
+.supporting {
+	width: 350px; 
+	height: 400px; 
+	margin-top: 30px;
+}
+
+.supporting h2 {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+h2 a {
+	color: black;
+	font-weight: bold;
+	font-size: 1.563rem;
+	text-decoration: none;
+	transition: all 0.3s ease 0.3s;
+}
+
+h2 a:hover {
+	color: #009900;
+}
+
+.supporting p {
+	line-height: 1.5;
+	font-size: 1rem;
+	font-weight: normal;
+	
+}
+
+.supporting img {
+	width: 350px;
+	height: 250px;
+}
+
+/* Footer */
+
+footer {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+}
+
+footer i {
+	color: #595959;
+	padding: 10px;
+	transition: all 0.3s ease 0.3s;
+}
+
+footer i:hover {
+	color: #009900;
+}
+
+/*About*/
+
+.about {
+	background: url("../pictures/coffee.jpg") no-repeat center;
+	background-size: contain;
+	width: 100%;
+	height:45vh;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.about p {
+	align-self: center;
+	line-height: 1.5;
+	font-size: 1.25rem;
+	text-shadow: 3px 3px 3px white;
+}
+
+/*Contact*/
+
+.contact {
+	background: url("../pictures/table-setting.jpg") no-repeat center;
+	background-size: contain;
+	width: 100%;
+	height:45vh;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.contact p {
+	align-self: center;
+	color: #595959;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-shadow: 3px 3px 3px #aaa;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #595959;
+	transition: all 0.3s ease 0.3s;
+}
+
+.contact a:hover {
+	color: #009900;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 450px) {
+
+.feature {
+	height: 55vh;
+}
+.about {
+	height: 55vh;
+}
+.about p {
+	width: 50%;
+}
+.contact {
+	height: 55vh;
+}
+.contact p {
+	padding-top: 30px;
+}
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+.feature {
+	height: 65vh;
+}
+.about {
+	height: 65vh;
+}
+.contact {
+	height: 65vh;
+}
+.contact p {
+	padding-top: 50px;
+}
+
+
+}
+
+@media screen and (min-width: 1050px) {
+
+.feature {
+	height: 95vh;
+}
+.about {
+	height: 95vh;
+}
+.about p {
+	width: 30%;
+}
+.contact {
+	height: 95vh;
+}
+.contact p {
+	padding-top: 80px;
+}
+
+
+}
+
